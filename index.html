@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <title>Men Feruzaman</title>
@@ -14,11 +15,11 @@
       <div class="main-content">
         <div class="woman"></div>
           <div class="main-text">
-            <a href="#" class="logo">
+            <a href="#" class="logo wow fadeInUp">
               Logo
             </a>
-            <h2>Andishaning otini qo'rqoq qo'yma...</h2>
-            <p>
+            <h2 class="wow fadeInUp">Andishaning otini qo'rqoq qo'yma...</h2>
+            <p class="wow fadeInUp">
               #Men_Feruzaman – bu jamoatchilikning ayollarga nisbatan zo’ravonlik, tahdid, tazyiq, adolatsizlik va tuhmatlarga qarshi ovozi. 2021 yilning avgust oyida QALAMPIR.UZ jurnalisti Feruza Najmiddinovaning sha’nini toptash, uni obro’sizlantirishga bo’lgan urinish jamiyatda gender tengiligi, ayollar huquq va erkinliklari, matbuot va so’z erkinligiga tahdid sifatida
               baholandi.  
               <br><br><br>
@@ -32,35 +33,35 @@
           </div>
       </div>
       <div class="form">
-        <form id="form" method="post"
+        <form id="sheetdb-form" method="post"
         action="https://sheetdb.io/api/v1/ango8od9c3722">
           <h2>Murojaat qiling</h2>
           <div class="item">
-            <div class="form-item">
+            <div class="form-item wow fadeInUp">
               <label for="name">Ismingiz</label>
               <input type="text" id="name" name="data[name]" placeholder="Masalan: Shoira" required>
             </div>
-            <div class="form-item">
+            <div class="form-item wow fadeInUp">
               <label for="surname">Familiyangiz</label>
               <input type="text" id="surname" name="data[surname]" placeholder="Masalan: Otabekova" required>
             </div>
           </div>
           <div class="item">
-            <div class="form-item">
+            <div class="form-item wow fadeInUp">
               <label for="adress">Manzilingiz</label>
               <input type="text" id="adress" name="data[adress]" placeholder="Qashqadaryo, Guzar tumani" required>
             </div>
-            <div class="form-item">
+            <div class="form-item wow fadeInUp">
               <label for="phonenumber">Telefon raqamingiz</label>
-              <input type="tel" id="phonenumber" name="data[phonenumber]" placeholder="+99893 936-91-23" value="+998" required>
+              <input type="tel" id="phonenumber" name="data[number]" placeholder="+99893 936-91-23" value="+998" required>
             </div>
           </div>
-          <div class="item placeholder">
+          <div class="item placeholder wow fadeInUp">
             <label for="message">Murojaatingiz mazmuni</label>
             <textarea name="data[message]" id="message" minlength="100" maxlength="1000" placeholder="Bu yerga sizning hayotingiz bosib o’tgan yo’lingiz yozilishi kerak" required></textarea>
           </div>
-          <button type="submit">Murojaatni yuborish</button>
-          <div class="footer">
+          <button type="submit" class="wow fadeInUp">Murojaatni yuborish</button>
+          <div class="footer wow fadeInUp">
             <a href="https://qalampir.uz" class="qalampir">
               <img src="img/qalampir.png" alt="Qalampir's logo">
             </a>
@@ -71,21 +72,7 @@
     </div>
   </div>
 
-
-  <script>
-    var form = document.getElementById('sheetdb-form');
-    form.addEventListener("submit", e => {
-      e.preventDefault();
-      fetch(form.action, {
-          method : "POST",
-          body: new FormData(document.getElementById("sheetdb-form")),
-      }).then(
-          response => response.json()
-      ).then((html) => {
-        // you can put any JS code here
-        alert('success')
-      });
-    });
-  </script>
+  <script src="javascript/wow.js"></script>
+  <script src="javascript/main.js"></script>
 </body>
 </html>
