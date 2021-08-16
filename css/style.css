@@ -167,7 +167,7 @@ button:hover{
     transform: scale(1);
   }
 }
-@media screen and (max-width: 1180px) {
+@media (max-width: 1180px) {
   *{
     color: red;
   }
