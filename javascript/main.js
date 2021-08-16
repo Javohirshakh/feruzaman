@@ -10,6 +10,6 @@
           response => response.json()
       ).then((html) => {
         // you can put any JS code here
-        alert('success')
+        alert('Murojaat muvaffaqiyatli qoldirildi')
       });
     });
