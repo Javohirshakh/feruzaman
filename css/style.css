@@ -214,4 +214,21 @@ button:hover{
   .content{
     flex-direction: column;
   }
+  .content >  *{
+    min-height: 150vh;
+  }
+  .main-text{
+    max-width: 350px;
+  }
+  form{
+    max-width: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .main-text{
+    max-width: 300px;
+  }
+  form{
+    max-width: 250px;
+  }
 }

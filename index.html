@@ -32,31 +32,32 @@
           </div>
       </div>
       <div class="form">
-        <form action="https://echo.htmlacademy.ru" method="POST">
+        <form method="post"
+        action="https://sheetdb.io/api/v1/ango8od9c3722">
           <h2>Murojaat qiling</h2>
           <div class="item">
             <div class="form-item">
               <label for="name">Ismingiz</label>
-              <input type="text" id="name" name="name" placeholder="Masalan: Shoira" required>
+              <input type="text" id="name" name="data[name]" placeholder="Masalan: Shoira" required>
             </div>
             <div class="form-item">
               <label for="surname">Familiyangiz</label>
-              <input type="text" id="surname" name="surname" placeholder="Masalan: Otabekova" required>
+              <input type="text" id="surname" name="data[surname]" placeholder="Masalan: Otabekova" required>
             </div>
           </div>
           <div class="item">
             <div class="form-item">
               <label for="adress">Manzilingiz</label>
-              <input type="text" id="adress" name="adress" placeholder="Qashqadaryo, Guzar tumani" required>
+              <input type="text" id="adress" name="data[adress]" placeholder="Qashqadaryo, Guzar tumani" required>
             </div>
             <div class="form-item">
               <label for="phonenumber">Telefon raqamingiz</label>
-              <input type="tel" id="phonenumber" name="phonenumber" placeholder="+99893 936-91-23" value="+998" required>
+              <input type="tel" id="phonenumber" name="data[phonenumber]" placeholder="+99893 936-91-23" value="+998" required>
             </div>
           </div>
           <div class="item placeholder">
             <label for="message">Murojaatingiz mazmuni</label>
-            <textarea name="message" id="message" minlength="100" maxlength="1000" placeholder="Bu yerga sizning hayotingiz bosib o’tgan yo’lingiz yozilishi kerak" required></textarea>
+            <textarea name="data[message]" id="message" minlength="100" maxlength="1000" placeholder="Bu yerga sizning hayotingiz bosib o’tgan yo’lingiz yozilishi kerak" required></textarea>
           </div>
           <button type="submit">Murojaatni yuborish</button>
           <div class="footer">
