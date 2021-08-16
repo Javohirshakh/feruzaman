@@ -7,6 +7,9 @@
   font-display: swap;
 }
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: "Bookman Old Style";
   color: #e8e8e8;
@@ -78,6 +81,7 @@ p{
   text-decoration: none;
   border-radius: 5px;
   padding: 8px 12px;
+  display: none;
 }
 
 form{
@@ -175,9 +179,11 @@ button:hover{
 @keyframes woman {
   from{
     transform: scale(1.2);
+    transform-origin: center center;
   }
   top{
     transform: scale(1);
+    transform-origin: center center;
   }
 }
 @media (max-width: 1180px) {
@@ -215,13 +221,16 @@ button:hover{
     flex-direction: column;
   }
   .content >  *{
-    min-height: 150vh;
+    min-height: 900px;
   }
   .main-text{
     max-width: 350px;
   }
   form{
     max-width: 350px;
+  }
+  .main-text a:last-child{
+    display: block;
   }
 }
 @media (max-width: 450px) {
